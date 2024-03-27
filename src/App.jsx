@@ -1,10 +1,8 @@
-import { useState } from 'react'
-
-function App() {
+const App = () => {
 
   return (
     <>
-      <p>App aplication</p>
+      Main aplication
     </>
   )
 }
