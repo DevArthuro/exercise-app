@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Stack } from "@mui/material";
+import { Stack, ImageListItem } from "@mui/material";
 import MainLogo from "../assets/logos/arm.png";
 
 const Navbar = () => {
@@ -7,10 +7,11 @@ const Navbar = () => {
     <Stack
       direction="row"
       justifyContent="space-around"
+      alignItems="center"
       sx={{
         gap: {
           sm: "122px",
-          xs: "40px",
+          xs: "25px",
         },
         mt: {
           sm: "32px",
@@ -21,17 +22,21 @@ const Navbar = () => {
       px="20px"
     >
       <Link to="/">
-        <img
-          src={MainLogo}
-          alt="logo"
-          style={{
-            width: "100px",
-            height: "80px",
-            margin: "0 20px",
+        <ImageListItem
+          sx={{
+            width: { lg: "120px", xs: "70px" },
+            height: { lg: "90px", xs: "60px" },
           }}
-        />
+        >
+          <img src={MainLogo} alt="logo" />
+        </ImageListItem>
       </Link>
-      <Stack direction="row" gap="40px" fontSize="1.8rem" alignItems="flex-end">
+      <Stack
+        direction="row"
+        gap="25px"
+        fontSize={{ lg: "2rem", sx: "1.4rem" }}
+        alignItems="flex-end"
+      >
         <Link
           to="/"
           style={{
