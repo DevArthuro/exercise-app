@@ -17,7 +17,7 @@ const SearchExercises = () => {
       >
         Te van a sorprender estos ejercicios
       </Typography>
-      <Box position="relative" m="65px 0">
+      <Box position="relative" m="65px 0" flexDirection="row">
         <TextField
           sx={{
             height: "76px",
@@ -26,7 +26,7 @@ const SearchExercises = () => {
               border: "none",
               borderRadius: "4px",
             },
-            width: { lg: "1170px", xs: "350px" },
+            width: { lg: "1170px", sm: "350px", xs: "100%" },
             backgroundColor: "#fff",
             borderRadius: "40px",
           }}
@@ -44,7 +44,8 @@ const SearchExercises = () => {
           sx={{
             height: "55px",
             background: "#FF2625",
-            m: "0 5px",
+            m: { sm: "0 5px", xs: "0" },
+            width: { sm: "100px", xs: "100%" },
           }}
           onClick={handleSubmit}
         >
