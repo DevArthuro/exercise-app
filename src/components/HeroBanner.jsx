@@ -10,20 +10,21 @@ const HeroBanner = () => {
       sx={{
         mb: { lg: "100px", xs: "20px" },
       }}
+      justifyContent="space-around"
     >
       <Typography
         sx={{
           top: { lg: "95%" },
-          left: { lg: "10%", xl: "20%" },
-          translate: "transform(-50%, -50%)",
           opacity: "0.2",
         }}
+        textAlign="center"
         display={{ lg: "block", xs: "none" }}
         fontWeight={600}
         color="#FF2625"
         position="absolute"
         zIndex={1}
         fontSize="100px"
+        width="100%"
       >
         Práctico y al grano
       </Typography>
