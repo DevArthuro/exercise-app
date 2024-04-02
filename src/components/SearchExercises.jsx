@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Stack, Typography } from "@mui/material";
 import { RapidApiExercises } from "../utils/fetchExercisesRapidapi";
 import PropTypes from "prop-types";
@@ -7,7 +7,17 @@ import SearchExercisesField from "./partials/SearchExercisesField";
 const SearchExercises = ({ setLoader }) => {
   const [search, setSearch] = useState("");
   const [resultRequest, setResultRequest] = useState("");
-  const [filterExercises, setFilterExercises] = useState([]);
+  const [filterExercises, setFilterExercises] = useState("");
+  const [bodyPartsMenu, setBodyPartsMenu] = useState("");
+
+  useEffect(() => {
+    const fetchBodyParts = async () => {
+      const data = await new RapidApiExercises().onlyBodyParts();
+      setBodyPartsMenu(["Todas", ...data]);
+    };
+
+    fetchBodyParts();
+  }, []);
 
   const handleSearch = async () => {
     setLoader(true);
