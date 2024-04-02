@@ -1,33 +1,34 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Stack, Typography } from "@mui/material";
 import { RapidApiExercises } from "../utils/fetchExercisesRapidapi";
 import PropTypes from "prop-types";
 import SearchExercisesField from "./partials/SearchExercisesField";
 
-const SearchExercises = ({ setLoader }) => {
+const SearchExercises = ({
+  setLoader,
+  exercisesList,
+  setExercisesList,
+  setFilterExercises,
+}) => {
   const [search, setSearch] = useState("");
-  const [resultRequest, setResultRequest] = useState("");
-  const [filterExercises, setFilterExercises] = useState("");
-  const [bodyPartsMenu, setBodyPartsMenu] = useState("");
-
-  useEffect(() => {
-    const fetchBodyParts = async () => {
-      const data = await new RapidApiExercises().onlyBodyParts();
-      setBodyPartsMenu(["Todas", ...data]);
-    };
-
-    fetchBodyParts();
-  }, []);
 
   const handleSearch = async () => {
     setLoader(true);
     if (search) {
-      const data =
-        resultRequest || (await new RapidApiExercises().allExercises());
-      setResultRequest(data);
+      try {
+        const responseData =
+          exercisesList.length > 0
+            ? exercisesList
+            : await new RapidApiExercises().allExercises();
+        setExercisesList(responseData);
+      } catch (error) {
+        setExercisesList([]);
+        setLoader(false);
+        return;
+      }
     }
-    if (resultRequest) {
-      const filterExercises = resultRequest.filter((exersices) => {
+    if (exercisesList) {
+      const filterExercises = exercisesList.filter((exersices) => {
         return (
           exersices.bodyPart.includes(search) ||
           exersices.equipment.includes(search) ||
@@ -66,6 +67,9 @@ const SearchExercises = ({ setLoader }) => {
 
 SearchExercises.propTypes = {
   setLoader: PropTypes.func.isRequired,
+  exercisesList: PropTypes.array.isRequired,
+  setExercisesList: PropTypes.func.isRequired,
+  setFilterExercises: PropTypes.func.isRequired,
 };
 
 export default SearchExercises;

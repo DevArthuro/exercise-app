@@ -19,7 +19,7 @@ export class RapidApiExercises {
       const data = responseExercises.json();
       return data;
     } catch (error) {
-      return { error: error.message || "Error to request all exercises" };
+      throw new Error(error.message || "Error to request all exercises");
     }
   }
 
@@ -36,7 +36,7 @@ export class RapidApiExercises {
       const data = responseExercises.json();
       return data;
     } catch (error) {
-      return { error: error.message || "Error to request body parts" };
+      throw new Error(error.message || "Error to request body parts");
     }
   }
 }
