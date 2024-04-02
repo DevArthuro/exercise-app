@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import HeroBanner from "../components/HeroBanner";
 import SearchExercises from "../components/SearchExercises";
 import { useState, useEffect } from "react";
-import Loader from "../components/ui/Loader";
+import Loader from "../components/common/Loader";
 import { RapidApiExercises } from "../utils/fetchExercisesRapidapi";
 
 const Home = () => {
