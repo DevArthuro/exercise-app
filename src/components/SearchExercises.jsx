@@ -3,12 +3,16 @@ import { Stack, Typography } from "@mui/material";
 import { RapidApiExercises } from "../utils/fetchExercisesRapidapi";
 import PropTypes from "prop-types";
 import SearchExercisesField from "./partials/SearchExercisesField";
+import BodyPartsHorizontalScrooll from "./partials/BodyPartsHorizontalScrooll";
 
 const SearchExercises = ({
   setLoader,
   exercisesList,
+  bodyPartList,
   setExercisesList,
   setFilterExercises,
+  bodyPartSelected,
+  setBodyPartSelected,
 }) => {
   const [search, setSearch] = useState("");
 
@@ -61,15 +65,23 @@ const SearchExercises = ({
         setSearch={setSearch}
         handleSearch={handleSearch}
       />
+      <BodyPartsHorizontalScrooll
+        bodyPartList={bodyPartList}
+        bodyPartSelected={bodyPartSelected}
+        setBodyPartSelected={setBodyPartSelected}
+      />
     </Stack>
   );
 };
 
 SearchExercises.propTypes = {
-  setLoader: PropTypes.func.isRequired,
   exercisesList: PropTypes.array.isRequired,
+  bodyPartList: PropTypes.array.isRequired,
+  bodyPartSelected: PropTypes.string.isRequired,
+  setLoader: PropTypes.func.isRequired,
   setExercisesList: PropTypes.func.isRequired,
   setFilterExercises: PropTypes.func.isRequired,
+  setBodyPartSelected: PropTypes.func.isRequired,
 };
 
 export default SearchExercises;
