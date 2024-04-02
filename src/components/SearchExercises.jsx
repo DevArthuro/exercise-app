@@ -1,10 +1,34 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
+import { RapidApiExercises } from "../utils/fetchExercisesRapidapi";
 
 const SearchExercises = () => {
   const [search, setSearch] = useState("");
+  const [resultRequest, setResultRequest] = useState("");
+  const [filterExercises, setFilterExercises] = useState([]);
 
-  const handleSubmit = async () => {};
+  const handleSearch = async () => {
+    if (search) {
+      const data =
+        resultRequest || (await new RapidApiExercises().allExercises());
+      setResultRequest(data);
+    }
+    if (resultRequest) {
+      const filterExercises = resultRequest.filter((exersices) => {
+        return (
+          exersices.bodyPart.includes(search) ||
+          exersices.equipment.includes(search) ||
+          exersices.name.includes(search) ||
+          !exersices.secondaryMuscles.filter((muscles) =>
+            muscles.includes(search)
+          ).length === 0 ||
+          exersices.target.includes(search)
+        );
+      });
+      setSearch("");
+      setFilterExercises(filterExercises.length > 0 ? filterExercises : []);
+    }
+  };
 
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
@@ -47,7 +71,7 @@ const SearchExercises = () => {
             m: { sm: "0 5px", xs: "0" },
             width: { sm: "100px", xs: "100%" },
           }}
-          onClick={handleSubmit}
+          onClick={handleSearch}
         >
           Buscar
         </Button>
