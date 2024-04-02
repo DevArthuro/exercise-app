@@ -10,12 +10,13 @@ const Home = () => {
   const [exercisesList, setExercisesList] = useState([]);
   const [filterExercises, setFilterExercises] = useState([]);
   const [bodyPartsMenu, setBodyPartsMenu] = useState([]);
+  const [bodyPartSelected, setBodyPartSelected] = useState("all");
 
   useEffect(() => {
     const fetchBodyParts = async () => {
       try {
         const data = await new RapidApiExercises().onlyBodyParts();
-        setBodyPartsMenu(["Todas", ...data]);
+        setBodyPartsMenu(["all", ...data]);
       } catch (error) {
         setBodyPartsMenu([]);
         return;
@@ -32,8 +33,11 @@ const Home = () => {
           <SearchExercises
             setLoader={setLoader}
             exercisesList={exercisesList}
+            bodyPartList={bodyPartsMenu}
+            bodyPartSelected={bodyPartSelected}
             setExercisesList={setExercisesList}
             setFilterExercises={setFilterExercises}
+            setBodyPartSelected={setBodyPartSelected}
           />
         </Box>
       ) : (
