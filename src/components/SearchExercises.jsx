@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { Typography, Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { RapidApiExercises } from "../utils/fetchExercisesRapidapi";
+import PropTypes from "prop-types";
 import SearchExercisesField from "./partials/SearchExercisesField";
 
-const SearchExercises = () => {
+const SearchExercises = ({ setLoader }) => {
   const [search, setSearch] = useState("");
   const [resultRequest, setResultRequest] = useState("");
   const [filterExercises, setFilterExercises] = useState([]);
 
   const handleSearch = async () => {
+    setLoader(true);
     if (search) {
       const data =
         resultRequest || (await new RapidApiExercises().allExercises());
@@ -29,6 +31,7 @@ const SearchExercises = () => {
       setSearch("");
       setFilterExercises(filterExercises.length > 0 ? filterExercises : []);
     }
+    setLoader(false);
   };
 
   return (
@@ -49,6 +52,10 @@ const SearchExercises = () => {
       />
     </Stack>
   );
+};
+
+SearchExercises.propTypes = {
+  setLoader: PropTypes.func.isRequired,
 };
 
 export default SearchExercises;
