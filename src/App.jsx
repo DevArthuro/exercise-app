@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import PageNotFound from "./pages/PageNotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import "../src/styles/GlobalStyles.css";
 const App = () => {
   return (
     <>
