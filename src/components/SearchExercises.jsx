@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, Box } from "@mui/material";
 import { RapidApiExercises } from "../utils/fetchExercisesRapidapi";
 import PropTypes from "prop-types";
 import SearchExercisesField from "./partials/SearchExercisesField";
@@ -65,11 +65,13 @@ const SearchExercises = ({
         setSearch={setSearch}
         handleSearch={handleSearch}
       />
-      <BodyPartsHorizontalScrooll
-        bodyPartList={bodyPartList}
-        bodyPartSelected={bodyPartSelected}
-        setBodyPartSelected={setBodyPartSelected}
-      />
+      <Box position="relative" padding="20px" width="100%" height="300px">
+        <BodyPartsHorizontalScrooll
+          bodyPartList={bodyPartList}
+          bodyPartSelected={bodyPartSelected}
+          setBodyPartSelected={setBodyPartSelected}
+        />
+      </Box>
     </Stack>
   );
 };

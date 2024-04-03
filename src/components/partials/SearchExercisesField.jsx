@@ -12,7 +12,7 @@ const SearchExercisesField = ({ search, setSearch, handleSearch }) => {
             border: "none",
             borderRadius: "4px",
           },
-          width: { lg: "1170px", sm: "350px", xs: "100%" },
+          width: { lg: "1000px", sm: "350px", xs: "100%" },
           backgroundColor: "#fff",
           borderRadius: "40px",
         }}
