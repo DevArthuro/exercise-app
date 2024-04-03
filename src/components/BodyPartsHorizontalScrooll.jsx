@@ -1,5 +1,7 @@
 import { Box } from "@mui/material";
 import PropTypes from "prop-types";
+import BodyPart from "./partials/BodyPart";
+import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 
 const BodyPartsHorizontalScrooll = ({
   bodyPartList,
@@ -8,13 +10,17 @@ const BodyPartsHorizontalScrooll = ({
 }) => {
   return (
     <Box position="relative" padding="20px" width="100%">
-      {bodyPartList.map((bodyPart, index) => {
-        return (
-          <Box key={index} m={{ lg: "0 50px", sm: "0 20px", xs: "0 10px" }}>
-            {bodyPart}
+      <ScrollMenu>
+        {bodyPartList.map((bodyPart, index) => (
+          <Box key={index} m={{ lg: "0 30px", sm: "0 20px", xs: "0 10px" }}>
+            <BodyPart
+              itemBodyPart={bodyPart}
+              bodyPartSelected={bodyPartSelected}
+              setBodyPartSelected={setBodyPartSelected}
+            />
           </Box>
-        );
-      })}
+        ))}
+      </ScrollMenu>
     </Box>
   );
 };
