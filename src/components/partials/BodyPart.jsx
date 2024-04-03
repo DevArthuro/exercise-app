@@ -19,6 +19,9 @@ const BodyPart = ({ itemBodyPart, bodyPartSelected, setBodyPartSelected }) => {
         cursor: "pointer",
         gap: "30px",
       }}
+      onClick={() => {
+        setBodyPartSelected(itemBodyPart);
+      }}
     >
       <ImageListItem
         sx={{
@@ -28,7 +31,15 @@ const BodyPart = ({ itemBodyPart, bodyPartSelected, setBodyPartSelected }) => {
       >
         <img src={Icon} alt={itemBodyPart} />
       </ImageListItem>
-      {itemBodyPart}
+      <Typography
+        fontSize={{ sm: "24px", xs: "14px" }}
+        fontWeight="bold"
+        fontFamily="Alegreya"
+        color="#3A1212"
+        textTransform="capitalize"
+      >
+        {itemBodyPart}
+      </Typography>
     </Stack>
   );
 };
