@@ -9,7 +9,6 @@ import RightArrowLogo from "../assets/Icons/arrowRight.png";
 
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
-  console.log();
   return (
     <Typography onClick={() => scrollPrev()} alignContent="center" p="5px">
       <ImageListItem
@@ -25,7 +24,6 @@ const LeftArrow = () => {
 };
 
 const RightArrow = () => {
-  console.log();
   const { scrollNext } = useContext(VisibilityContext);
   return (
     <Typography onClick={() => scrollNext()} alignContent="center" p="5px">
@@ -45,6 +43,7 @@ const BodyPartsHorizontalScrooll = ({
   bodyPartList,
   bodyPartSelected,
   setBodyPartSelected,
+  setError,
 }) => {
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
@@ -58,6 +57,7 @@ const BodyPartsHorizontalScrooll = ({
             itemBodyPart={bodyPart}
             bodyPartSelected={bodyPartSelected}
             setBodyPartSelected={setBodyPartSelected}
+            setError={setError}
           />
         </Box>
       ))}
@@ -69,6 +69,7 @@ BodyPartsHorizontalScrooll.propTypes = {
   bodyPartSelected: PropTypes.string.isRequired,
   bodyPartList: PropTypes.array.isRequired,
   setBodyPartSelected: PropTypes.func.isRequired,
+  setError: PropTypes.func.isRequired,
 };
 
 export default BodyPartsHorizontalScrooll;
