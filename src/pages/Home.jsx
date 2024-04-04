@@ -8,6 +8,7 @@ import {
   getBodyPartsList,
   getFilterByBodyPart,
 } from "../utils/handlerResquestApi";
+import Exercises from "../components/Exercises";
 
 const Home = () => {
   const [loader, setLoader] = useState(false);
@@ -32,6 +33,7 @@ const Home = () => {
       try {
         const data = await getAllExercises();
         setExercisesList(data);
+        setFilterExercises(data);
       } catch (error) {
         setError(error);
         return;
@@ -71,6 +73,7 @@ const Home = () => {
             setBodyPartSelected={setBodyPartSelected}
             setError={setError}
           />
+          <Exercises filterExercises={filterExercises} />
         </Box>
       ) : (
         <Box
