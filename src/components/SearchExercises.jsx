@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Stack, Typography, Box } from "@mui/material";
-import { RapidApiExercises } from "../utils/fetchExercisesRapidapi";
 import PropTypes from "prop-types";
 import SearchExercisesField from "./partials/SearchExercisesField";
 import BodyPartsHorizontalScrooll from "./BodyPartsHorizontalScrooll";
+import { getBodyPartsList } from "../utils/handlerResquestApi";
 
 const SearchExercises = ({
   setLoader,
@@ -13,6 +13,7 @@ const SearchExercises = ({
   setFilterExercises,
   bodyPartSelected,
   setBodyPartSelected,
+  setError,
 }) => {
   const [search, setSearch] = useState("");
 
@@ -20,14 +21,12 @@ const SearchExercises = ({
     setLoader(true);
     if (search) {
       try {
-        const responseData =
-          exercisesList.length > 0
-            ? exercisesList
-            : await new RapidApiExercises().allExercises();
+        const responseData = await getBodyPartsList();
         setExercisesList(responseData);
       } catch (error) {
         setExercisesList([]);
         setLoader(false);
+        setError(error.message);
         return;
       }
     }
@@ -77,13 +76,14 @@ const SearchExercises = ({
 };
 
 SearchExercises.propTypes = {
-  exercisesList: PropTypes.array.isRequired,
+  exercisesList: PropTypes.any.isRequired, // can to be array or object
   bodyPartList: PropTypes.array.isRequired,
   bodyPartSelected: PropTypes.string.isRequired,
   setLoader: PropTypes.func.isRequired,
   setExercisesList: PropTypes.func.isRequired,
   setFilterExercises: PropTypes.func.isRequired,
   setBodyPartSelected: PropTypes.func.isRequired,
+  setError: PropTypes.func.isRequired,
 };
 
 export default SearchExercises;
