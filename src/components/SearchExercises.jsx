@@ -31,15 +31,15 @@ const SearchExercises = ({
       }
     }
     if (exercisesList) {
-      const filterExercises = exercisesList.filter((exersices) => {
+      const filterExercises = exercisesList.filter((exercises) => {
         return (
-          exersices.bodyPart.includes(search) ||
-          exersices.equipment.includes(search) ||
-          exersices.name.includes(search) ||
-          !exersices.secondaryMuscles.filter((muscles) =>
+          exercises.bodyPart.includes(search) ||
+          exercises.equipment.includes(search) ||
+          exercises.name.includes(search) ||
+          !exercises.secondaryMuscles.filter((muscles) =>
             muscles.includes(search)
           ).length === 0 ||
-          exersices.target.includes(search)
+          exercises.target.includes(search)
         );
       });
       setSearch("");
@@ -64,7 +64,7 @@ const SearchExercises = ({
         setSearch={setSearch}
         handleSearch={handleSearch}
       />
-      <Box position="relative" padding="20px" width="100%" height="300px">
+      <Box position="relative" padding="20px" width="100%" height="200px">
         <BodyPartsHorizontalScrooll
           bodyPartList={bodyPartList}
           bodyPartSelected={bodyPartSelected}
