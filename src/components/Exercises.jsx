@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import Pagination from "@mui/material/Pagination";
 import { Box, Stack, Typography } from "@mui/material";
+import ExercisesCard from "./partials/ExercisesCard";
 
 const Exercises = ({ filterExercises }) => {
+  console.log(filterExercises);
   return (
     <Box
       sx={{ mt: { lg: "110px", xs: "0" } }}
@@ -19,8 +21,8 @@ const Exercises = ({ filterExercises }) => {
         flexWrap="wrap"
         justifyContent="center"
       >
-        {filterExercises.map((value, index) => (
-          <p key={index}>{value.name}</p>
+        {filterExercises.map((exercise, index) => (
+          <ExercisesCard key={index} exercise={exercise} />
         ))}
       </Stack>
     </Box>

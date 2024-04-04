@@ -3,7 +3,7 @@ import { Stack, Typography, Box } from "@mui/material";
 import PropTypes from "prop-types";
 import SearchExercisesField from "./partials/SearchExercisesField";
 import BodyPartsHorizontalScrooll from "./BodyPartsHorizontalScrooll";
-import { getAllExercises, getBodyPartsList } from "../utils/handlerResquestApi";
+import { getAllExercises } from "../utils/handlerResquestApi";
 
 const SearchExercises = ({
   setLoader,
