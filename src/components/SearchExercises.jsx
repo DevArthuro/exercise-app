@@ -3,7 +3,7 @@ import { Stack, Typography, Box } from "@mui/material";
 import PropTypes from "prop-types";
 import SearchExercisesField from "./partials/SearchExercisesField";
 import BodyPartsHorizontalScrooll from "./BodyPartsHorizontalScrooll";
-import { getBodyPartsList } from "../utils/handlerResquestApi";
+import { getAllExercises, getBodyPartsList } from "../utils/handlerResquestApi";
 
 const SearchExercises = ({
   setLoader,
@@ -18,19 +18,19 @@ const SearchExercises = ({
   const [search, setSearch] = useState("");
 
   const handleSearch = async () => {
-    setLoader(true);
     if (search) {
       try {
-        const responseData = await getBodyPartsList();
+        const responseData = await getAllExercises();
         setExercisesList(responseData);
       } catch (error) {
-        setExercisesList([]);
         setLoader(false);
         setError(error.message);
         return;
       }
     }
     if (exercisesList) {
+      console.log(exercisesList);
+      setBodyPartSelected("all");
       const filterExercises = exercisesList.filter((exercises) => {
         return (
           exercises.bodyPart.includes(search) ||
@@ -43,9 +43,8 @@ const SearchExercises = ({
         );
       });
       setSearch("");
-      setFilterExercises(filterExercises.length > 0 ? filterExercises : []);
+      setFilterExercises(filterExercises);
     }
-    setLoader(false);
   };
 
   return (
