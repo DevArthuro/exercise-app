@@ -1,1 +1,25 @@
-{}
+{
+  "exercises": [
+    {
+      "id": "1",
+      "bodyPart": "part 1",
+      "equipment": "whatever",
+      "gifUrl": "#",
+      "name": "part 1",
+      "target": "part 1",
+      "secondaryMuscles": [],
+      "instructions": []
+    },
+    {
+      "id": "2",
+      "bodyPart": "part 2",
+      "equipment": "whatever",
+      "gifUrl": "#",
+      "name": "part 2",
+      "target": "part 2",
+      "secondaryMuscles": [],
+      "instructions": []
+    }
+  ],
+  "bodyPartList": [{ "id": "1", "bodyParts": ["part 1", "part 2"] }]
+}
