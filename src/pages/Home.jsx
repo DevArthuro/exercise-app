@@ -17,6 +17,7 @@ const Home = () => {
   const [bodyPartsMenu, setBodyPartsMenu] = useState([]);
   const [bodyPartSelected, setBodyPartSelected] = useState("all");
   const [error, setError] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     const fetchBodyParts = async () => {
@@ -73,7 +74,11 @@ const Home = () => {
             setBodyPartSelected={setBodyPartSelected}
             setError={setError}
           />
-          <Exercises filterExercises={filterExercises} />
+          <Exercises
+            filterExercises={filterExercises}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
         </Box>
       ) : (
         <Box
