@@ -48,15 +48,11 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    setLoader(true);
-    const result =
-      bodyPartSelected !== "all"
-        ? getFilterByBodyPart(bodyPartSelected, exercisesList)
-        : null;
-    if (result) {
+    const result = getFilterByBodyPart(bodyPartSelected, exercisesList);
+
+    if (result && !!bodyPartSelected) {
       setFilterExercises(result);
     }
-    setLoader(false);
   }, [filterExercises, bodyPartSelected, exercisesList]);
 
   return (
