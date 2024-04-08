@@ -24,7 +24,7 @@ const Exercises = ({ filterExercises, currentPage, setCurrentPage }) => {
       p="20px"
       id="exercises"
     >
-      <Typography variant="h4" textAlign="center" mb="46px">
+      <Typography variant="h4" textAlign="center" mb="50px">
         Ejercicios
       </Typography>
       <Stack
@@ -33,9 +33,15 @@ const Exercises = ({ filterExercises, currentPage, setCurrentPage }) => {
         flexWrap="wrap"
         justifyContent="center"
       >
-        {currentExercises.map((exercise, index) => (
-          <ExercisesCard key={index} exercise={exercise} />
-        ))}
+        {currentExercises.length !== 0 ? (
+          currentExercises.map((exercise, index) => (
+            <ExercisesCard key={index} exercise={exercise} />
+          ))
+        ) : (
+          <Typography fontSize="2rem" fontWeight="bold" color="#ff2525">
+            No se encontro resultado
+          </Typography>
+        )}
       </Stack>
       <Stack mt="100px" alignItems="center">
         {filterExercises.length > EXERCISES_PER_PAGE && (

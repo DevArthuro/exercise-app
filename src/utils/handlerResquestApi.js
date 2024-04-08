@@ -25,5 +25,8 @@ export async function getBodyPartsList() {
 }
 
 export function getFilterByBodyPart(bodyPart, listToExercises) {
-  return listToExercises;
+  if (bodyPart === "all") {
+    return listToExercises;
+  }
+  return listToExercises.filter((exercise) => exercise.bodyPart === bodyPart);
 }
