@@ -1,25 +1,504 @@
 {
   "exercises": [
     {
-      "id": "1",
-      "bodyPart": "part 1",
-      "equipment": "whatever",
+      "id": 1,
+      "bodyPart": "Legs",
+      "equipment": "Dumbbells",
       "gifUrl": "#",
-      "name": "part 1",
-      "target": "part 1",
-      "secondaryMuscles": [],
-      "instructions": []
+      "name": "Squats",
+      "target": "Quadriceps",
+      "secondaryMuscles": ["Hamstrings", "Glutes"],
+      "instructions": [
+        "Stand with feet shoulder-width apart.",
+        "Lower your body by bending your knees.",
+        "Keep your back straight and chest up.",
+        "Push through your heels to return to the starting position."
+      ]
     },
     {
-      "id": "2",
-      "bodyPart": "part 2",
-      "equipment": "whatever",
+      "id": 2,
+      "bodyPart": "Chest",
+      "equipment": "Barbell",
       "gifUrl": "#",
-      "name": "part 2",
-      "target": "part 2",
-      "secondaryMuscles": [],
-      "instructions": []
+      "name": "Bench Press",
+      "target": "Pectoralis Major",
+      "secondaryMuscles": ["Triceps", "Deltoids"],
+      "instructions": [
+        "Lie on a flat bench with your feet planted on the ground.",
+        "Grip the barbell slightly wider than shoulder-width apart.",
+        "Lower the barbell to your chest, keeping your elbows at a 45-degree angle.",
+        "Push the barbell back up to the starting position."
+      ]
+    },
+    {
+      "id": 3,
+      "bodyPart": "Back",
+      "equipment": "Pull-up Bar",
+      "gifUrl": "#",
+      "name": "Pull-ups",
+      "target": "Latissimus Dorsi",
+      "secondaryMuscles": ["Biceps", "Rear Deltoids"],
+      "instructions": [
+        "Hang from the pull-up bar with your hands slightly wider than shoulder-width apart.",
+        "Pull your body up until your chin is above the bar.",
+        "Lower yourself back down with control to complete one rep."
+      ]
+    },
+    {
+      "id": 4,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 5,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 6,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 7,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 8,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 9,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 10,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 11,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 12,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 13,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 14,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 15,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 16,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 17,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 18,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 19,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 19,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 20,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 21,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 21,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 22,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 23,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 8,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 24,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 25,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 26,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 27,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 28,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 29,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
+    },
+    {
+      "id": 30,
+      "bodyPart": "Legs",
+      "equipment": "Barbell",
+      "gifUrl": "#",
+      "name": "Deadlifts",
+      "target": "Hamstrings",
+      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "instructions": [
+        "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
+        "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
+        "Keep your chest up, back straight, and core engaged as you stand up, bringing the barbell to hip level.",
+        "Lower the barbell back down by pushing your hips back and bending your knees."
+      ]
     }
   ],
-  "bodyPartList": [{ "id": "1", "bodyParts": ["part 1", "part 2"] }]
+  "bodyPartList": [
+    {
+      "id": "1",
+      "bodyParts": ["Legs", "Chest", "Back", "Legs"]
+    }
+  ]
 }
