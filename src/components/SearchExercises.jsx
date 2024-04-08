@@ -29,7 +29,7 @@ const SearchExercises = ({
       }
     }
     if (exercisesList) {
-      setBodyPartSelected("all");
+      setBodyPartSelected("");
       const filterExercises = exercisesList.filter((exercises) => {
         return (
           exercises.bodyPart.toLowerCase().includes(search) ||
