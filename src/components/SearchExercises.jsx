@@ -29,21 +29,21 @@ const SearchExercises = ({
       }
     }
     if (exercisesList) {
-      console.log(exercisesList);
       setBodyPartSelected("all");
       const filterExercises = exercisesList.filter((exercises) => {
         return (
-          exercises.bodyPart.includes(search) ||
-          exercises.equipment.includes(search) ||
-          exercises.name.includes(search) ||
+          exercises.bodyPart.toLowerCase().includes(search) ||
+          exercises.equipment.toLowerCase().includes(search) ||
+          exercises.name.toLowerCase().includes(search) ||
           !exercises.secondaryMuscles.filter((muscles) =>
-            muscles.includes(search)
+            muscles.toLowerCase().includes(search)
           ).length === 0 ||
-          exercises.target.includes(search)
+          exercises.target.toLowerCase().includes(search)
         );
       });
       setSearch("");
       setFilterExercises(filterExercises);
+      window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
     }
   };
 
