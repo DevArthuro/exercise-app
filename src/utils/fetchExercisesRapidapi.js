@@ -60,11 +60,13 @@ export class RapidApiExercises {
         `${this.baseUrl}${this.sandbox ? `/exercises/${id}` : `/${id}`}`,
         options
       );
-      const data = await responseDetailExercise.json();
-
-      return data;
+      if (responseDetailExercise.ok) {
+        const data = await responseDetailExercise.json();
+        return data;
+      }
+      throw new Error("No se logro encontrar el ejercicio buscado");
     } catch (error) {
-      throw new Error(error.message || "Error to request exercises details");
+      throw new Error(error.message);
     }
   }
 }

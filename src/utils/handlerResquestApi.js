@@ -36,8 +36,6 @@ export async function getDetailExercise(id) {
     const data = await FetchApiObject.getDetailExercise(id);
     return data;
   } catch (error) {
-    const message =
-      error?.message || "No se logro encontrar el ejercicio buscado";
-    throw new Error(message);
+    throw new Error(error.message);
   }
 }
