@@ -49,4 +49,22 @@ export class RapidApiExercises {
       throw new Error(error.message || "Error to request body parts");
     }
   }
+
+  async getDetailExercise(id) {
+    const aditionalOptions = {
+      method: "GET",
+    };
+    const options = Object.assign({}, aditionalOptions, this.options);
+    try {
+      const responseDetailExercise = await fetch(
+        `${this.baseUrl}${this.sandbox ? `/exercises/${id}` : `/${id}`}`,
+        options
+      );
+      const data = await responseDetailExercise.json();
+
+      return data;
+    } catch (error) {
+      throw new Error(error.message || "Error to request exercises details");
+    }
+  }
 }
