@@ -30,3 +30,14 @@ export function getFilterByBodyPart(bodyPart, listToExercises) {
   }
   return listToExercises.filter((exercise) => exercise.bodyPart === bodyPart);
 }
+
+export async function getDetailExercise(id) {
+  try {
+    const data = await FetchApiObject.getDetailExercise(id);
+    return data;
+  } catch (error) {
+    const message =
+      error?.message || "No se logro encontrar el ejercicio buscado";
+    throw new Error(message);
+  }
+}
