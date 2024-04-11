@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { Stack, ImageListItem } from "@mui/material";
 import MainLogo from "../assets/logos/arm.png";
+import { useHref } from "react-router-dom";
 
 const Navbar = () => {
+  const data = useHref();
+  console.log(data);
   return (
     <Stack
       direction="row"
@@ -47,15 +50,17 @@ const Navbar = () => {
         >
           Inicio
         </Link>
-        <a
-          href="#exercises"
-          style={{
-            textDecoration: "none",
-            color: "#3A1212",
-          }}
-        >
-          Ejercicios
-        </a>
+        {data === "/" && (
+          <a
+            href="#exercises"
+            style={{
+              textDecoration: "none",
+              color: "#3A1212",
+            }}
+          >
+            Ejercicios
+          </a>
+        )}
       </Stack>
     </Stack>
   );
