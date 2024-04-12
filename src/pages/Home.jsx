@@ -7,7 +7,7 @@ import {
   getAllExercises,
   getBodyPartsList,
   getFilterByBodyPart,
-} from "../utils/handlerResquestApi";
+} from "../handler/handlerResquestApi";
 import Exercises from "../components/Exercises";
 
 const Home = () => {
