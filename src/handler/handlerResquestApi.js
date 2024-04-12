@@ -1,4 +1,4 @@
-import { RapidApiExercises } from "./fetchExercisesRapidapi";
+import { RapidApiExercises } from "../utils/fetchExercisesRapidapi";
 
 const FetchApiObject = new RapidApiExercises();
 

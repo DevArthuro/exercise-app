@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 import DetailExercise from "../components/DetailExercise";
-import { getDetailExercise } from "../utils/handlerResquestApi";
+import { getDetailExercise } from "../handler/handlerResquestApi";
 
 const ExercisesDetails = () => {
   const [error, setError] = useState("");
