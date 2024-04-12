@@ -4,10 +4,13 @@
       "id": 1,
       "bodyPart": "Legs",
       "equipment": "Dumbbells",
-      "gifUrl": "#",
+      "gifUrl": "https://i0.wp.com/entrenandoc.com/wp-content/uploads/2024/03/oie_4uVoz6aLPqv5.gif",
       "name": "Squats",
       "target": "Quadriceps",
-      "secondaryMuscles": ["Hamstrings", "Glutes"],
+      "secondaryMuscles": [
+        "Hamstrings",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with feet shoulder-width apart.",
         "Lower your body by bending your knees.",
@@ -22,7 +25,10 @@
       "gifUrl": "#",
       "name": "Bench Press",
       "target": "Pectoralis Major",
-      "secondaryMuscles": ["Triceps", "Deltoids"],
+      "secondaryMuscles": [
+        "Triceps",
+        "Deltoids"
+      ],
       "instructions": [
         "Lie on a flat bench with your feet planted on the ground.",
         "Grip the barbell slightly wider than shoulder-width apart.",
@@ -37,7 +43,10 @@
       "gifUrl": "#",
       "name": "Pull-ups",
       "target": "Latissimus Dorsi",
-      "secondaryMuscles": ["Biceps", "Rear Deltoids"],
+      "secondaryMuscles": [
+        "Biceps",
+        "Rear Deltoids"
+      ],
       "instructions": [
         "Hang from the pull-up bar with your hands slightly wider than shoulder-width apart.",
         "Pull your body up until your chin is above the bar.",
@@ -51,7 +60,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -66,7 +78,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -81,7 +96,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -96,7 +114,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -111,7 +132,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -126,7 +150,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -141,7 +168,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -156,7 +186,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -171,7 +204,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -186,7 +222,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -201,7 +240,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -216,7 +258,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -231,7 +276,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -246,7 +294,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -261,7 +312,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -276,7 +330,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -291,7 +348,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -306,7 +366,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -321,7 +384,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -336,7 +402,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -351,7 +420,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -366,7 +438,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -381,7 +456,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -396,7 +474,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -411,7 +492,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -426,7 +510,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -441,7 +528,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -456,7 +546,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -471,7 +564,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -486,7 +582,10 @@
       "gifUrl": "#",
       "name": "Deadlifts",
       "target": "Hamstrings",
-      "secondaryMuscles": ["Lower Back", "Glutes"],
+      "secondaryMuscles": [
+        "Lower Back",
+        "Glutes"
+      ],
       "instructions": [
         "Stand with your feet hip-width apart, with the barbell over your mid-foot.",
         "Bend at your hips and knees and grab the barbell with an overhand grip just outside your legs.",
@@ -498,7 +597,12 @@
   "bodyPartList": [
     {
       "id": "1",
-      "bodyParts": ["Legs", "Chest", "Back", "Legs"]
+      "bodyParts": [
+        "Legs",
+        "Chest",
+        "Back",
+        "Legs"
+      ]
     }
   ]
 }
