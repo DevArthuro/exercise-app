@@ -9,7 +9,7 @@ pathExercises = Path().absolute().joinpath("src/db_mock")
 def requestYoutubeApi(question):
     baseUrl = "https://www.googleapis.com/youtube/v3/search"
     response = requests.get(baseUrl, params = {
-        "key":"AIzaSyApDF5wD2OiYgeA-gyrerqwcFWK0Tq4vmU",
+        "key":"key_google_api",
         "q": question,
         "type": "video",
         "part": "snippet",
