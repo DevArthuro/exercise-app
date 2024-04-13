@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Typography, Stack, Button, ImageListItem, Box } from "@mui/material";
+import { Typography, Stack, Button, ImageListItem } from "@mui/material";
 
 import BodyPartImage from "../assets/Icons/bodyPart.png";
 import EquipmentImage from "../assets/Icons/equipment.png";

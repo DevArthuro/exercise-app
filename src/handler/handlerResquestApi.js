@@ -1,4 +1,7 @@
 import { RapidApiExercises } from "../utils/fetchExercisesRapidapi";
+import YoutubeApi from "../utils/fetchYoutubeApi";
+
+// Rapid api consume
 
 const FetchApiObject = new RapidApiExercises();
 
@@ -38,4 +41,32 @@ export async function getDetailExercise(id) {
   } catch (error) {
     throw new Error(error.message);
   }
+}
+
+// Youtube api consume
+
+const FetchYoutubeObject = new YoutubeApi();
+
+export async function getVideosToSearch(maxResults = 4) {
+  const data = await FetchYoutubeObject.setSearch(
+    "Ejercicios de squats",
+    maxResults
+  );
+  if (data.code === 403) {
+    // Condition to message error
+    return "Hemos superado el limite de uso permitido";
+  }
+  if (data.code === 500) {
+    return "Error interno del programa";
+  }
+  const idToVideos = new Array();
+  data.items.forEach((item) => {
+    idToVideos.push({
+      videoId: item.id.videoId,
+      thumbnails: item.snippet.thumbnails.medium.url,
+      title: item.snippet.title,
+      channelTitle: item.snippet.channelTitle,
+    });
+  });
+  return idToVideos;
 }
