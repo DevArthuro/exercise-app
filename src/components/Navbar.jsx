@@ -5,7 +5,6 @@ import { useHref } from "react-router-dom";
 
 const Navbar = () => {
   const data = useHref();
-  console.log(data);
   return (
     <Stack
       direction="row"
