@@ -47,11 +47,10 @@ export async function getDetailExercise(id) {
 
 const FetchYoutubeObject = new YoutubeApi();
 
-export async function getVideosToSearch(maxResults = 4) {
-  const data = await FetchYoutubeObject.setSearch(
-    "Ejercicios de squats",
-    maxResults
-  );
+export async function getVideosToSearch(id, maxResults) {
+  const exercise = await getDetailExercise(id);
+  const query = `The exercise ${exercise.name} with equipment ${exercise.equipment}`;
+  const data = await FetchYoutubeObject.setSearch(query, maxResults);
   if (data.code === 403) {
     // Condition to message error
     return "Hemos superado el limite de uso permitido";

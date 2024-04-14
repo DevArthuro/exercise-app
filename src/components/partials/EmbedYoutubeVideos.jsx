@@ -15,14 +15,16 @@ const EmbedYoutubeVideos = ({ videoId, title, thumbnails, creator }) => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowfullscreen
       /> */}
-      <ImageListItem>
+      <ImageListItem sx={{ width: "300px" }}>
         <img src={thumbnails} alt={title} loading="lazy" />
       </ImageListItem>
       <Typography
+        width="300px"
         fontSize="1.2rem"
         textAlign="left"
         marginTop="20px"
         fontWeight="bold"
+        overflow="scroll"
       >
         {title}
       </Typography>

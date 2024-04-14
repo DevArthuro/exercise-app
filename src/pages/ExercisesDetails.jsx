@@ -17,7 +17,7 @@ const ExercisesDetails = () => {
 
   useEffect(() => {
     const searchVideosApi = async () => {
-      const data = await getVideosToSearch();
+      const data = await getVideosToSearch(id, 3); // Id to exercise for to build query and number max responses
       return data;
     };
     searchVideosApi().then((data) => {
