@@ -13,7 +13,7 @@ const ExercisesDetails = () => {
   const [exerciseDetail, setExercisseDetail] = useState({});
   const { id } = useParams();
 
-  const [idVideosToSearch, setIdVideosToSearch] = useState([]);
+  const [dataResultApiYoutube, setdataResultApiYoutube] = useState([]);
 
   useEffect(() => {
     const searchVideosApi = async () => {
@@ -31,13 +31,13 @@ const ExercisesDetails = () => {
           },
         ]
         */
-        setIdVideosToSearch(data);
+        setdataResultApiYoutube(data);
       } else {
         setError(data.message || data);
       }
     });
     window.scrollTo({ top: 0 }); // Solution fix whren use embed components for youtube
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     const fetchExercisesData = async () => {
@@ -57,7 +57,10 @@ const ExercisesDetails = () => {
   return (
     <Stack justifyContent="center">
       <DetailExercise exerciseDetail={exerciseDetail} />
-      <ExerciseVideos error={error} idVideosToSearch={idVideosToSearch} />
+      <ExerciseVideos
+        error={error}
+        dataResultApiYoutube={dataResultApiYoutube}
+      />
       {/*
       <SimilarExercises /> */}
     </Stack>

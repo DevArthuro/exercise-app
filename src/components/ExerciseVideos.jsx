@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import YoutubeVideosNotFound from "../assets/logos/youtubeNotFound.jpeg";
 import EmbedYoutubeVideos from "./partials/EmbedYoutubeVideos";
 
-const ExerciseVideos = ({ error, idVideosToSearch }) => {
+const ExerciseVideos = ({ error, dataResultApiYoutube }) => {
   return (
     <Stack flexDirection="column" m={{ lg: "140px 40px", xs: "20px 0px" }}>
       <Typography variant="h4" mb="33px">
@@ -40,7 +40,7 @@ const ExerciseVideos = ({ error, idVideosToSearch }) => {
           flexWrap="wrap"
           justifyContent="center"
         >
-          {idVideosToSearch.map((videoObject) => {
+          {dataResultApiYoutube.map((videoObject) => {
             /*
               The structure of video is
               {
@@ -70,7 +70,7 @@ const ExerciseVideos = ({ error, idVideosToSearch }) => {
 
 ExerciseVideos.propTypes = {
   error: PropTypes.string.isRequired,
-  idVideosToSearch: PropTypes.array.isRequired,
+  dataResultApiYoutube: PropTypes.array.isRequired,
 };
 
 export default ExerciseVideos;
