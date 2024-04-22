@@ -1,11 +1,10 @@
 import { Box, Typography, ImageListItem } from "@mui/material";
 import PropTypes from "prop-types";
-import BodyPart from "./partials/BodyPart";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { useContext } from "react";
 
-import LeftArrowLogo from "../assets/Icons/arrowLeft.png";
-import RightArrowLogo from "../assets/Icons/arrowRight.png";
+import LeftArrowLogo from "../../assets/Icons/arrowLeft.png";
+import RightArrowLogo from "../../assets/Icons/arrowRight.png";
 
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
@@ -39,37 +38,18 @@ const RightArrow = () => {
   );
 };
 
-const BodyPartsHorizontalScrooll = ({
-  bodyPartList,
-  bodyPartSelected,
-  setBodyPartSelected,
-  setError,
-}) => {
+const HorizontalScroll = ({ children }) => {
   return (
-    <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-      {bodyPartList.map((bodyPart, index) => (
-        <Box
-          key={index}
-          m={{ lg: "0 30px", sm: "0 20px", xs: "0 10px" }}
-          itemId={bodyPart}
-        >
-          <BodyPart
-            itemBodyPart={bodyPart}
-            bodyPartSelected={bodyPartSelected}
-            setBodyPartSelected={setBodyPartSelected}
-            setError={setError}
-          />
-        </Box>
-      ))}
-    </ScrollMenu>
+    <Box position="relative" padding="20px" width="100%" height="200px">
+      <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
+        {children}
+      </ScrollMenu>
+    </Box>
   );
 };
 
-BodyPartsHorizontalScrooll.propTypes = {
-  bodyPartSelected: PropTypes.string.isRequired,
-  bodyPartList: PropTypes.array.isRequired,
-  setBodyPartSelected: PropTypes.func.isRequired,
-  setError: PropTypes.func.isRequired,
+HorizontalScroll.propTypes = {
+  children: PropTypes.any.isRequired,
 };
 
-export default BodyPartsHorizontalScrooll;
+export default HorizontalScroll;
