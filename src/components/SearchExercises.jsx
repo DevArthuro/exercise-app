@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Stack, Typography, Box } from "@mui/material";
 import PropTypes from "prop-types";
 import SearchExercisesField from "./partials/SearchExercisesField";
-import BodyPartsHorizontalScrooll from "./BodyPartsHorizontalScrooll";
 import { getAllExercises } from "../handler/handlerResquestApi";
+import BodyPart from "./partials/BodyPart";
+import HorizontalScroll from "./common/HorizontalScroll";
 
 const SearchExercises = ({
   setLoader,
@@ -63,13 +64,22 @@ const SearchExercises = ({
         setSearch={setSearch}
         handleSearch={handleSearch}
       />
-      <Box position="relative" padding="20px" width="100%" height="200px">
-        <BodyPartsHorizontalScrooll
-          bodyPartList={bodyPartList}
-          bodyPartSelected={bodyPartSelected}
-          setBodyPartSelected={setBodyPartSelected}
-        />
-      </Box>
+      <HorizontalScroll>
+        {bodyPartList.map((bodyPart, index) => (
+          <Box
+            key={index}
+            m={{ lg: "0 30px", sm: "0 20px", xs: "0 10px" }}
+            itemId={bodyPart}
+          >
+            <BodyPart
+              itemBodyPart={bodyPart}
+              bodyPartSelected={bodyPartSelected}
+              setBodyPartSelected={setBodyPartSelected}
+              setError={setError}
+            />
+          </Box>
+        ))}
+      </HorizontalScroll>
     </Stack>
   );
 };

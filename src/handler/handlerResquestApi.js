@@ -47,26 +47,32 @@ export async function getDetailExercise(id) {
 
 const FetchYoutubeObject = new YoutubeApi();
 
-export async function getVideosToSearch(maxResults = 4) {
-  const data = await FetchYoutubeObject.setSearch(
-    "Ejercicios de squats",
-    maxResults
-  );
-  if (data.code === 403) {
-    // Condition to message error
-    return "Hemos superado el limite de uso permitido";
+export async function getVideosToSearch(id, maxResults) {
+  const exercise = await getDetailExercise(id);
+  const query = `The exercise ${exercise.name} with equipment ${exercise.equipment}`;
+  const data = await FetchYoutubeObject.setSearch(query, maxResults);
+  // Codes to errors
+  switch (data.code) {
+    case 403:
+      return "Hemos superado el limite de uso permitido";
+    case 500:
+      return "Error interno del programa";
+    case 400:
+      return data.message || "No hemos podido realizar la búsqueda";
+    case 404:
+      return data.message || "No encontramos información";
   }
-  if (data.code === 500) {
-    return "Error interno del programa";
-  }
-  const idToVideos = new Array();
+
+  const dataFoundYoutubeVideos = new Array();
+
   data.items.forEach((item) => {
-    idToVideos.push({
+    dataFoundYoutubeVideos.push({
       videoId: item.id.videoId,
       thumbnails: item.snippet.thumbnails.medium.url,
       title: item.snippet.title,
       channelTitle: item.snippet.channelTitle,
     });
   });
-  return idToVideos;
+
+  return dataFoundYoutubeVideos;
 }

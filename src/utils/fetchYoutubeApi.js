@@ -27,7 +27,6 @@ class YoutubeApi {
         code: error.response.data.error.code || 500,
         message: error.response.data.error.message || "internal error server",
       };
-      console.log(response);
       return response;
     }
   }

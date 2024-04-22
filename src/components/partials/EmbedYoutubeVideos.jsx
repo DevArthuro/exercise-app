@@ -1,34 +1,39 @@
 import { Box, ImageListItem, Typography } from "@mui/material";
 import PropTypes from "prop-types";
+import { useState } from "react";
+import ModalReproduceVideo from "./ModalReproduceYoutubeVideo";
 
 const EmbedYoutubeVideos = ({ videoId, title, thumbnails, creator }) => {
+  const [modal, setModal] = useState(false);
   return (
     <Box>
-      {/* <iframe
-        width="350"
-        height="180"
-        allowFullScreen
-        src={`https://www.youtube.com/embed/${videoId}`}
-        title="Lo que me hubiera gustado saber antes de programar | Entrevista con Rita Codes"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      /> */}
-      <ImageListItem>
-        <img src={thumbnails} alt={title} loading="lazy" />
-      </ImageListItem>
-      <Typography
-        fontSize="1.2rem"
-        textAlign="left"
-        marginTop="20px"
-        fontWeight="bold"
+      <ModalReproduceVideo
+        showModal={modal}
+        setShowModal={setModal}
+        videoId={videoId}
+      />
+      <Box
+        onClick={() => {
+          setModal(true);
+        }}
       >
-        {title}
-      </Typography>
-      <Typography fontSize="0.8rem" textAlign="left">
-        {creator}
-      </Typography>
+        <ImageListItem sx={{ width: "300px" }}>
+          <img src={thumbnails} alt={title} loading="lazy" />
+        </ImageListItem>
+        <Typography
+          width="300px"
+          fontSize="1.2rem"
+          textAlign="left"
+          marginTop="20px"
+          fontWeight="bold"
+          overflow="scroll"
+        >
+          {title}
+        </Typography>
+        <Typography fontSize="0.8rem" textAlign="left">
+          {creator}
+        </Typography>
+      </Box>
     </Box>
   );
 };
